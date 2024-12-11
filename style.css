@@ -1,0 +1,265 @@
+/* Global Styles for PC and Laptop */
+@media (min-width: 769px) {
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background: url('gamer.webp') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+    }
+
+    /* Navigation Bar */
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #00d8ff;
+    }
+
+    /* Neon Logo Styles */
+.logo {
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    color: #0ff; /* Neon Cyan */
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #0ff;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.logo-hover {
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    color: #ff00ff; /* Neon Magenta */
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #f0f, 0 0 40px #f0f, 0 0 50px #ff00ff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Logo Container for Centering */
+.logo-container {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Logo Hover Animation */
+.logo-container:hover .logo {
+    opacity: 0;
+}
+
+.logo-container:hover .logo-hover {
+    opacity: 1;
+}
+
+
+    /* Booking Section */
+    .booking-container,
+    .reviews-container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form button,
+    .review-form textarea,
+    .review-form button {
+        font-size: 1rem;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .reviews .review {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        background-color: #222;
+        padding: 10px;
+        border-radius: 5px;
+        color: #fff;
+    }
+
+    .booking-form button,
+    .review-form button {
+        background-color: #00d8ff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .booking-form button:hover,
+    .review-form button:hover {
+        background-color: #00a8cc;
+    }
+}
+
+/* Responsive Design for Mobile Users */
+@media (max-width: 768px) {
+    body {
+        font-family: Arial, sans-serif;
+        background: url('gamer2.webp') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+    }
+
+    /* Navigation Bar */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 10px 15px;
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #00d8ff;
+    }
+
+/* Neon Logo Styles */
+.logo {
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    color: #0ff; /* Neon Cyan */
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #0ff;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.logo-hover {
+    font-size: 3rem;
+    font-family: 'Arial', sans-serif;
+    color: #ff00ff; /* Neon Magenta */
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #f0f, 0 0 40px #f0f, 0 0 50px #ff00ff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Logo Container for Centering */
+.logo-container {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Logo Hover Animation */
+.logo-container:hover .logo {
+    opacity: 0;
+}
+
+.logo-container:hover .logo-hover {
+    opacity: 1;
+}
+
+
+    /* Booking Section */
+    .booking-container {
+        max-width: 95%;
+        margin: 10px auto;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form button {
+        font-size: 0.9rem;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .booking-form button {
+        background-color: #00d8ff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Review Section */
+    .reviews-container {
+        max-width: 95%;
+        margin: 10px auto;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+    }
+
+    .review-form textarea {
+        height: 80px;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background-color: #222;
+        color: #fff;
+    }
+
+    .review-form button {
+        font-size: 0.9rem;
+        width: 100%;
+        padding: 10px;
+        background-color: #00d8ff;
+        border-radius: 5px;
+    }
+
+    .reviews .review {
+        font-size: 0.9rem;
+        background-color: #222;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+}
+
+/* For very small devices (e.g., phones in portrait orientation) */
+@media (max-width: 480px) {
+    nav ul {
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form button,
+    .review-form textarea,
+    .review-form button {
+        font-size: 0.8rem;
+    }
+}
