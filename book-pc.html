@@ -3,21 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <title>Book Your Game - GameZone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Game Booking</title>
 </head>
 <body>
-    <select id="game-type">
-        <option value="PS5">PS5</option>
-        <option value="PC">PC</option>
-    </select>
-    <input type="date" id="date">
-    <input type="time" id="time">
-    <input type="text" id="name" placeholder="Enter your name">
-    <button class="booking-btn">Book Now</button>
-    <div id="confirmation-message"></div>
 
-    <script src="JavaScript.js" defer></script>
+<!-- Booking Page Content -->
+<div class="booking-container">
+    <h2>Book Your Gaming Session</h2>
+
+    <!-- Booking Form -->
+    <div class="booking-form">
+        <label for="game-type">Choose Your Game</label>
+        <select id="game-type">
+            <option value="PS5">PS5</option>
+            <option value="PC">PC</option>
+        </select>
+
+        <label for="date">Select Date</label>
+        <input type="date" id="date">
+
+        <label for="time">Select Time</label>
+        <input type="time" id="time">
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <button class="booking-btn">Confirm Booking</button>
+    </div>
+
+    <div id="confirmation-message" class="confirmation-message"></div>
+</div>
+
+<!-- Back to Home Page -->
+<a href="index.html">Back to Home</a>
+
+<script src="JavaScript.js"></script>
 </body>
 </html>
